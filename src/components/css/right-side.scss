@@ -1,0 +1,55 @@
+@import '../../styles/vars';
+
+.right-side {
+    @media only screen and (min-width: 0) {
+        padding: 80px 40px 0;
+        background-color: $light-grey;
+        header {
+            position: relative;
+            figure {
+                position: absolute;
+                right: 0;
+                top: -80px;
+                img { width: 160px;  
+                height: 160px;
+                }
+            }
+            h1 {
+                margin-bottom: 0;
+                font-size: 36px;
+                font-weight: 100;
+                font-family: "Averta std", sans-serif;
+            }
+
+            h2 {
+                padding: 4px 12px;
+                margin-top: 8px;
+                display: inline-block;
+                color: white;
+                background-color: $light-black;
+                font-family: "Averta Std"
+            }
+        }  
+        header + .text-component {
+            margin-top: 24px;
+        }    
+        .rating-level{
+            margin-bottom: 4px;
+        }
+        .text-component {
+            position: relative;
+            &:before {
+                content: attr(index);
+                width: 29px;
+                padding: 2px 3px;
+                font-size: 13px;
+                background-image: url(../../assets//counter-icon.svg);
+                background-repeat: no-repeat;
+                left: -50px;
+                display: block;
+                position: absolute;
+                color: white;
+            }
+        }
+    }
+}
