@@ -4,7 +4,7 @@ import {TextComponent} from './TextComponent'
 import {RatingLevel} from './RatingLevel'
 
 export const  RightSide = function ({data}) {
-    const sections = ['education', 'current_projects', 'personal_projects']
+    const sections = ['skills', 'education', 'personal_projects']
     
     return (
         <section className="right-side">

@@ -32,11 +32,11 @@ app.get('/api/resume/:name', function(req,res){
             Research Skills
             Analytical Skills`         
         },
-        special_skills: {
+        languages: {
             title: 'LANGUAGES',
-            details:`ENGLISH -<br/>
-            SPANISH - <br/>
-            FRENCH - <br/>`
+            details:`ENGLISH - ADVANCED <br/>
+            SPANISH - ADVANCED <br/>
+            FRENCH - INTERMEDIATE <br/>`
             
         },
         skills: [
@@ -77,7 +77,7 @@ app.get('/api/resume/:name', function(req,res){
                 rate: 6
             },
            ],
-        educations: {
+        education: {
             title:'EDUCATION',
             details:`
             HighSchool

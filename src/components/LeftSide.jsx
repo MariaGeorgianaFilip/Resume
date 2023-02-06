@@ -2,7 +2,7 @@ import './css/left-side.scss'
 import {TextComponent} from "./TextComponent"
 
 export const  LeftSide = function ({data}) {
-    const sections = ['about', 'work', 'soft_skills', 'special_skills']
+    const sections = ['about', 'work', 'soft_skills', 'languages']
     
     return (
         <section className='left-side'>
